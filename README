@@ -1,0 +1,68 @@
+# Free Forex Currency API Client
+
+A Python application for fetching and displaying foreign exchange rates using the Free Forex API.
+
+## Features
+
+- Fetch real-time forex rates for major currency pairs
+- Generate HTML reports with current rates
+- Support for single or multiple currency pairs
+- Clean and modern HTML report design
+- Error handling and input validation
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd freeForexCurrencyAPI
+```
+
+2. Create and activate virtual environment:
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+3. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+### Basic Usage
+
+Run the application to fetch all supported currency pairs:
+```bash
+python src/main.py
+```
+
+### Fetch Specific Currency Pairs
+
+Specify one or more currency pairs as command line arguments:
+```bash
+python src/main.py EURUSD GBPUSD
+```
+
+### Running Tests
+
+```bash
+pytest tests/
+```
+
+## Supported Currency Pairs
+
+- EURUSD
+- EURGBP
+- GBPUSD
+- USDJPY
+- AUDUSD
+- USDCHF
+- NZDUSD
+- USDCAD
+- USDZAR
+
+## Generated Reports
+
+Reports are saved in the `reports` directory as HTML files.
